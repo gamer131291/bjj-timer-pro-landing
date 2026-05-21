@@ -2,191 +2,142 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BJJ Timer Pro - Gladiadores</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>JLDynamics | Desarrollo de Software Premium</title>
+    <meta name="description" content="JLDynamics - Soluciones de software de alto rendimiento, ingeniería en Flutter/Firebase, cronometraje táctico y sistemas de seguridad integrados.">
+    <meta name="keywords" content="JLDynamics, desarrollo software, BJJ Timer Pro, fintech, control parental">
+    <meta name="author" content="JLDynamics">
+    
+    <meta property="og:title" content="JLDynamics | Desarrollo de Software Premium">
+    <meta property="og:description" content="Soluciones tecnológicas de vanguardia. Rápido, Seguro, Escalable, Innovador.">
+    <meta property="og:type" content="website">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="icon" type="image/png" href="assets/logo.png">
 </head>
-<body>
-    <!-- HERO SECTION -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="logo-container">
-                    <img src="assets/logo.png" alt="BJJ Timer Pro" class="logo">
-                    <span class="badge">GLADIADORES</span>
-                </div>
-                <h1>Entrena, Compite, <span class="highlight">Gana</span></h1>
-                <p>La app de timer para BJJ que te conecta con gladiadores de todo el mundo. Premios en efectivo, ranking profesional y logros exclusivos.</p>
-                <div class="cta-buttons">
-                    <a href="#" class="btn btn-primary" id="btn-android">
-                        <span>📱</span> Descargar para Android
-                    </a>
-                    <a href="#" class="btn btn-secondary" id="btn-ios">
-                        <span>🍎</span> Próximamente en iOS
-                    </a>
-                </div>
-                <div class="coming-soon">
-                    <span class="pill">🚀 Lanzamiento Beta: Abril 2026</span>
-                </div>
+<body data-interactive>
+
+    <div id="custom-cursor"></div>
+    <div id="custom-cursor-blur"></div>
+
+    <header class="navbar">
+        <div class="logo-container">
+            <img src="assets/logo.png" alt="JLDynamics Logo" class="logo-img" width="42" height="42">
+            <div class="logo-text">JL<span>Dynamics</span></div>
+        </div>
+        <div class="theme-swapper" aria-label="Selector de Skin Corporativo">
+            <button class="theme-btn" data-swatch="default" title="Skin Matrix Default" aria-label="Tema por defecto"></button>
+            <button class="theme-btn" data-swatch="cyan" title="Skin Cyber Cyan" aria-label="Tema cian"></button>
+            <button class="theme-btn" data-swatch="purple" title="Skin Neon Purple" aria-label="Tema púrpura"></button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-tagline">Desarrollo de Software de Alta Gama</div>
+            <h1 class="hero-title">Diseñamos el Futuro<br>Digital de tu Empresa</h1>
+            <div class="ecg-container">
+                <svg class="ecg-svg" viewBox="0 0 800 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="ecg-path" d="M0 60H320L330 30L340 90L350 10L360 110L370 45L380 75L390 60H800" stroke-linecap="round"/>
+                    <defs>
+                        <linearGradient id="ecg-gradient" x1="0" y1="0" x2="800" y2="0" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="var(--primary)"/>
+                            <stop offset="0.5" stop-color="var(--secondary)"/>
+                            <stop offset="1" stop-color="var(--primary)"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
             </div>
-            <div class="hero-image">
-                <div class="phone-mockup">
-                    <div class="phone-screen">
-                        <div class="timer-display">06:00</div>
-                        <div class="fight-status">⚔️ LUCHA ⚔️</div>
+        </section>
+
+        <section class="pillars-section">
+            <h2 class="section-title">Nuestra Infraestructura</h2>
+            <div class="pillars-grid">
+                <div class="pillar-card" data-pillar="rapido">
+                    <div class="pillar-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                        </svg>
                     </div>
+                    <h3>Rápido</h3>
+                    <p>Optimización nativa milimétrica.</p>
+                </div>
+                <div class="pillar-card" data-pillar="seguro">
+                    <div class="pillar-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <h3>Seguro</h3>
+                    <p>Criptografía y resiliencia lógica.</p>
+                </div>
+                <div class="pillar-card" data-pillar="escalable">
+                    <div class="pillar-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="18" y1="20" x2="18" y2="10"/>
+                            <line x1="12" y1="20" x2="12" y2="4"/>
+                            <line x1="6" y1="20" x2="6" y2="14"/>
+                        </svg>
+                    </div>
+                    <h3>Escalable</h3>
+                    <p>Sistemas modulares listos para crecer.</p>
+                </div>
+                <div class="pillar-card" data-pillar="innovador">
+                    <div class="pillar-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+                            <polyline points="2 17 12 22 22 17"/>
+                            <polyline points="2 12 12 17 22 12"/>
+                        </svg>
+                    </div>
+                    <h3>Innovador</h3>
+                    <p>Interfaces disruptivas de vanguardia.</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- BENEFICIOS SECTION -->
-    <section class="benefits">
-        <div class="container">
-            <h2>¿Por qué elegir <span class="highlight">BJJ Timer Pro</span>?</h2>
-            <div class="benefits-grid">
-                <div class="benefit-card">
-                    <div class="benefit-icon">💰</div>
-                    <h3>Premios en Efectivo</h3>
-                    <p>Gana dinero real en cada temporada. Top 1 de cada cinturón recibe premios.</p>
+        <section class="ecosystem-section">
+            <h2 class="section-title">Ecosistema de Soluciones</h2>
+            <div class="carousel-container">
+                <div class="product-card" data-product="bjj">
+                    <span class="product-badge">Performance / Deporte</span>
+                    <h4>BJJ Timer Pro</h4>
+                    <p>Sistemas de control y cronometraje táctico avanzado para deportes de combate de alto rendimiento.</p>
+                    <button class="product-btn" data-modal="bjj">Desplegar Interfaz</button>
                 </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">🏆</div>
-                    <h3>Ranking Profesional</h3>
-                    <p>Compite por el título de Gladiador. Ranking actualizado en tiempo real.</p>
+                <div class="product-card" data-product="fintech">
+                    <span class="product-badge">Fintech Analytics</span>
+                    <h4>Paga tus Deudas</h4>
+                    <p>Algoritmia y automatización financiera basada en el método Snowball para liquidación inteligente de pasivos.</p>
+                    <button class="product-btn" data-modal="fintech">Iniciar Consola</button>
                 </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">🛡️</div>
-                    <h3>Validación Anti-trampas</h3>
-                    <p>Sistema de doble confirmación + GPS. Resultados justos y verificados.</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">🎖️</div>
-                    <h3>Logros y Niveles</h3>
-                    <p>Desbloquea medallas y sube de nivel. Conviértete en leyenda.</p>
+                <div class="product-card" data-product="edtech">
+                    <span class="product-badge">EdTech & Security</span>
+                    <h4>Tutor al Mando</h4>
+                    <p>Software de control parental integral y protección activa para entornos operativos Windows/Mobile.</p>
+                    <button class="product-btn" data-modal="edtech">Configurar Entorno</button>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- CÓMO FUNCIONA -->
-    <section class="how-it-works">
-        <div class="container">
-            <h2>¿Cómo <span class="highlight">funciona</span>?</h2>
-            <div class="steps">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <h3>Regístrate</h3>
-                    <p>Crea tu perfil de gladiador con tu cinturón y academia.</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <h3>Genera o acepta retos</h3>
-                    <p>Usa códigos QR para desafiar a otros gladiadores.</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <h3>Lucha y registra</h3>
-                    <p>Timer profesional, doble confirmación y sumas puntos.</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">4</div>
-                    <h3>Gana premios</h3>
-                    <p>Sube en el ranking y accede a premios exclusivos.</p>
-                </div>
+    <div id="product-modal" class="modal">
+        <div class="modal-content glass-modal">
+            <div class="modal-header">
+                <h2 id="modal-title">BJJ Timer Pro</h2>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <div class="modal-loading">Cargando interfaz...</div>
             </div>
         </div>
-    </section>
-
-    <!-- LOGROS PREVIEW -->
-    <section class="achievements">
-        <div class="container">
-            <h2>Desbloquea <span class="highlight">logros épicos</span></h2>
-            <div class="achievements-grid">
-                <div class="achievement-card">
-                    <span class="achievement-icon">🦾</span>
-                    <h4>Cazador de Palancas</h4>
-                    <p>10 palancas de brazo</p>
-                    <div class="progress-bar"><div class="progress" style="width: 0%"></div></div>
-                </div>
-                <div class="achievement-card">
-                    <span class="achievement-icon">🦁</span>
-                    <h4>El Estrangulador</h4>
-                    <p>5 mata leones</p>
-                    <div class="progress-bar"><div class="progress" style="width: 0%"></div></div>
-                </div>
-                <div class="achievement-card">
-                    <span class="achievement-icon">👑</span>
-                    <h4>Gladiador Invicto</h4>
-                    <p>20 victorias seguidas</p>
-                    <div class="progress-bar"><div class="progress" style="width: 0%"></div></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- PREMIOS SECTION -->
-    <section class="prizes">
-        <div class="container">
-            <h2>Premios <span class="highlight">2026</span></h2>
-            <div class="prizes-grid">
-                <div class="prize-card">
-                    <div class="prize-amount">$5,000</div>
-                    <p>Campeón Absoluto</p>
-                </div>
-                <div class="prize-card">
-                    <div class="prize-amount">$2,000</div>
-                    <p>Por cinturón</p>
-                </div>
-                <div class="prize-card">
-                    <div class="prize-amount">🥋</div>
-                    <p>Kimonos Exclusivos</p>
-                </div>
-                <div class="prize-card">
-                    <div class="prize-amount">🏆</div>
-                    <p>Patrocinios</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- TESTIMONIAL -->
-    <section class="testimonial">
-        <div class="container">
-            <div class="testimonial-card">
-                <p>"La mejor app de timer para BJJ. El sistema de retos es innovador , directo y sencillo."</p>
-                <div class="testimonial-author">
-                    <strong>— Prof. Anderson Sangacha</strong>
-                    <span>Alliance, Root´s Academy</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <img src="assets/logo.png" alt="BJJ Timer Pro" class="footer-logo-img">
-                    <p>Entrena como un gladiador</p>
-                </div>
-                <div class="footer-links">
-    <a href="terms.html">Términos y Condiciones</a>
-    <a href="privacy.html">Política de Privacidad</a>
-    <a href="mailto:luimike001@gmail.com">Contacto: luimike001@gmail.com</a>
-</div>
-                <div class="footer-social">
-                    <a href="#">📷 Instagram</a>
-                    <a href="#">📘 Facebook</a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 BJJ Timer Pro. Todos los derechos reservados.</p>
-            </div>
-        </div>
-    </footer>
+    </div>
 
     <script src="script.js"></script>
 </body>
